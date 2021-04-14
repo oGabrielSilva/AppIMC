@@ -1,0 +1,26 @@
+.form {
+    clear: both;
+}
+
+.imc, .imc-result {
+    line-height: normal;
+    font-size: .9em;
+}
+
+.imc {
+    float: left;
+} 
+
+.imc-result {
+    float: right;
+}
+
+.danger, .true {
+    background: var(--danger-color);
+    color: #fff;
+    padding: 10px;
+}
+
+.true {
+    background: var(--true-color);
+}
