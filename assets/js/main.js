@@ -38,20 +38,20 @@ function myScopo() {
 
         let i;
         if (result <= 18.5) {
-            i = 'Abaixo do peso'
+            i = '<p class="danger">Abaixo do peso'
         } else if (result < 25) {
-            i = 'Peso normal'
+            i = '<p class="true">Peso normal'
         } else if (result < 30) {
-            i = 'Sobrepeso'
+            i = '<p class="true">Sobrepeso'
         } else if (result < 35) {
-            i = 'Obesidade grau 1'
+            i = '<p class="danger">Obesidade grau 1'
         } else if (result < 40) {
-            i = 'Obesidade grau 2'
+            i = '<p class="danger">Obesidade grau 2'
         } else {
-            i = 'Obesidade grau 3'
+            i = '<p class="danger">Obesidade grau 3'
         }
 
-        resultHtml.innerHTML = `<p class="true">${i} (IMC: ${result.toFixed(2)})</p>`
+        resultHtml.innerHTML = `${i} (IMC: ${result.toFixed(2)})</p>`
 
         pesoHtml.value = ``
         alturaHtml.value = ``
